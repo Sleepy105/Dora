@@ -201,10 +201,10 @@ Wire Wire Line
 Wire Wire Line
 	8200 3100 8200 3050
 $Comp
-L power:GND #PWR031
+L power:GND #PWR030
 U 1 1 5D3EA3C8
 P 8200 3100
-F 0 "#PWR031" H 8200 2850 50  0001 C CNN
+F 0 "#PWR030" H 8200 2850 50  0001 C CNN
 F 1 "GND" H 8205 2927 50  0000 C CNN
 F 2 "" H 8200 3100 50  0001 C CNN
 F 3 "" H 8200 3100 50  0001 C CNN
@@ -220,10 +220,10 @@ Wire Wire Line
 Wire Wire Line
 	8400 2600 8400 2750
 $Comp
-L power:+3.3V #PWR032
+L power:+3.3V #PWR031
 U 1 1 5D3EA3BE
 P 8400 2600
-F 0 "#PWR032" H 8400 2450 50  0001 C CNN
+F 0 "#PWR031" H 8400 2450 50  0001 C CNN
 F 1 "+3.3V" H 8415 2773 50  0000 C CNN
 F 2 "" H 8400 2600 50  0001 C CNN
 F 3 "" H 8400 2600 50  0001 C CNN
@@ -235,10 +235,10 @@ LEFT_ENC2
 Text HLabel 7150 2850 2    50   Output ~ 0
 LEFT_ENC1
 $Comp
-L Connector:Conn_01x04_Male J9
+L Connector:Conn_01x04_Male J8
 U 1 1 5D3E6CE9
 P 7900 2850
-F 0 "J9" H 8008 3131 50  0000 C CNN
+F 0 "J8" H 8008 3131 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 8008 3040 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7900 2850 50  0001 C CNN
 F 3 "~" H 7900 2850 50  0001 C CNN
@@ -247,17 +247,6 @@ F 3 "~" H 7900 2850 50  0001 C CNN
 $EndComp
 Text Notes 7150 2200 0    98   ~ 20
 Motor Encoders
-$Comp
-L Device:R R12
-U 1 1 5DA4B43B
-P 3800 3650
-F 0 "R12" H 3870 3696 50  0000 L CNN
-F 1 "0" H 3870 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3730 3650 50  0001 C CNN
-F 3 "~" H 3800 3650 50  0001 C CNN
-	1    3800 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 3500 3800 3450
 Connection ~ 3800 3450
@@ -539,125 +528,6 @@ F 3 "" H 6400 2600 50  0001 C CNN
 	1    6400 2600
 	1    0    0    -1  
 $EndComp
-Text Notes 7450 3750 0    100  ~ 20
-Camera
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J8
-U 1 1 5D805BED
-P 7650 4600
-F 0 "J8" H 7700 5217 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 7700 5126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 7650 4600 50  0001 C CNN
-F 3 "~" H 7650 4600 50  0001 C CNN
-	1    7650 4600
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7450 5000
-$Comp
-L power:GND #PWR033
-U 1 1 5D80B154
-P 9250 4800
-F 0 "#PWR033" H 9250 4550 50  0001 C CNN
-F 1 "GND" H 9255 4627 50  0000 C CNN
-F 2 "" H 9250 4800 50  0001 C CNN
-F 3 "" H 9250 4800 50  0001 C CNN
-	1    9250 4800
-	1    0    0    -1  
-$EndComp
-Text Label 7450 4300 2    50   ~ 0
-VSYNC
-Text Label 7450 4400 2    50   ~ 0
-HSYNC
-Text Label 7450 4500 2    50   ~ 0
-RST
-Text Label 7450 4600 2    50   ~ 0
-D1
-Text Label 7450 4700 2    50   ~ 0
-D3
-Text Label 7450 4800 2    50   ~ 0
-D5
-Text Label 7450 4900 2    50   ~ 0
-D7
-Text Label 7950 4300 0    50   ~ 0
-SCL
-Text Label 7950 4400 0    50   ~ 0
-SDA
-Text Label 7950 4500 0    50   ~ 0
-D0
-Text Label 7950 4600 0    50   ~ 0
-D2
-Text Label 7950 4700 0    50   ~ 0
-D4
-Text Label 7950 4800 0    50   ~ 0
-D6
-Text Label 7950 4900 0    50   ~ 0
-PCLK
-Text Label 7950 5000 0    50   ~ 0
-PWDN
-Entry Wire Line
-	7100 4200 7200 4300
-Entry Wire Line
-	7100 4300 7200 4400
-Entry Wire Line
-	7100 4400 7200 4500
-Entry Wire Line
-	7100 4500 7200 4600
-Entry Wire Line
-	7100 4600 7200 4700
-Entry Wire Line
-	7100 4700 7200 4800
-Entry Wire Line
-	7100 4800 7200 4900
-Wire Wire Line
-	7200 4300 7450 4300
-Wire Wire Line
-	7200 4400 7450 4400
-Wire Wire Line
-	7450 4500 7200 4500
-Wire Wire Line
-	7450 4600 7200 4600
-Wire Wire Line
-	7450 4700 7200 4700
-Wire Wire Line
-	7450 4800 7200 4800
-Wire Wire Line
-	7450 4900 7200 4900
-Entry Wire Line
-	8200 4300 8300 4400
-Entry Wire Line
-	8200 4400 8300 4500
-Entry Wire Line
-	8200 4500 8300 4600
-Entry Wire Line
-	8200 4600 8300 4700
-Entry Wire Line
-	8200 4700 8300 4800
-Entry Wire Line
-	8200 4800 8300 4900
-Entry Wire Line
-	8200 4900 8300 5000
-Entry Wire Line
-	8200 5000 8300 5100
-Wire Wire Line
-	8200 4900 7950 4900
-Wire Wire Line
-	8200 4700 7950 4700
-Wire Wire Line
-	8200 4500 7950 4500
-Text HLabel 8300 4650 2    50   Input ~ 0
-Camera
-Text HLabel 7100 4500 0    50   Input ~ 0
-Camera
-Wire Wire Line
-	7950 4400 8200 4400
-Wire Wire Line
-	7950 4600 8200 4600
-Wire Wire Line
-	7950 4800 8200 4800
-Wire Wire Line
-	7950 5000 8200 5000
-Wire Wire Line
-	7950 4300 8200 4300
 $Sheet
 S 2850 5350 750  550 
 U 5D7E35AC
@@ -670,67 +540,17 @@ Text HLabel 3600 5550 2    50   Output ~ 0
 IR_OUT
 Text HLabel 2850 5550 0    50   Input ~ 0
 IR_SEL
-$Comp
-L rasbot:AO3400 Q2
-U 1 1 5D93B6A5
-P 9400 4500
-F 0 "Q2" H 9656 4546 50  0000 L CNN
-F 1 "AO3400" H 9656 4455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10225 4425 50  0001 C CNN
-F 3 "http://www.aosmd.com/pdfs/datasheet/ao3400.pdf" H 9500 4500 50  0001 C CNN
-	1    9400 4500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR030
-U 1 1 5D806BAC
-P 7200 4100
-F 0 "#PWR030" H 7200 3950 50  0001 C CNN
-F 1 "+3.3V" H 7215 4273 50  0000 C CNN
-F 2 "" H 7200 4100 50  0001 C CNN
-F 3 "" H 7200 4100 50  0001 C CNN
-	1    7200 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 4200 7200 4200
-Wire Wire Line
-	7200 4200 7200 4100
-Text HLabel 9550 4500 2    50   Input ~ 0
-Camera_EN
-Wire Wire Line
-	7950 4200 8700 4200
-$Comp
-L Device:R R13
-U 1 1 5D89F4F8
-P 8700 4450
-F 0 "R13" H 8770 4496 50  0000 L CNN
-F 1 "0" H 8770 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8630 4450 50  0001 C CNN
-F 3 "~" H 8700 4450 50  0001 C CNN
-	1    8700 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 4300 8700 4200
-Connection ~ 8700 4200
-Wire Wire Line
-	9250 4700 9250 4750
-Wire Wire Line
-	9250 4300 9250 4200
-Wire Wire Line
-	8700 4200 9250 4200
-Wire Wire Line
-	8700 4600 8700 4750
-Wire Wire Line
-	8700 4750 9250 4750
-Connection ~ 9250 4750
-Wire Wire Line
-	9250 4750 9250 4800
-Wire Bus Line
-	7100 4200 7100 4850
-Wire Bus Line
-	8300 4350 8300 5100
 Wire Bus Line
 	5200 2150 5200 2550
+$Comp
+L Jumper:SolderJumper_2_Open JP10
+U 1 1 5E7F0EAA
+P 3800 3650
+F 0 "JP10" V 3754 3718 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 3845 3718 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 3650 50  0001 C CNN
+F 3 "~" H 3800 3650 50  0001 C CNN
+	1    3800 3650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
