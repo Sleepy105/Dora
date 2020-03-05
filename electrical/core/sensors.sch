@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 17
+Sheet 3 8
 Title ""
 Date "2019-10-11"
 Rev "1.0"
@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2500 4700 0    98   ~ 20
-IR Matrix 7x7
 Text Notes 3500 1400 0    98   ~ 20
 Ultrasonic
 $Comp
@@ -528,29 +526,17 @@ F 3 "" H 6400 2600 50  0001 C CNN
 	1    6400 2600
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 2850 5350 750  550 
-U 5D7E35AC
-F0 "IR" 50
-F1 "ir.sch" 50
-F2 "IR_OUT" O R 3600 5550 50 
-F3 "IR_SEL" I L 2850 5550 50 
-$EndSheet
-Text HLabel 3600 5550 2    50   Output ~ 0
-IR_OUT
-Text HLabel 2850 5550 0    50   Input ~ 0
-IR_SEL
-Wire Bus Line
-	5200 2150 5200 2550
 $Comp
-L Jumper:SolderJumper_2_Open JP10
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 5E7F0EAA
 P 3800 3650
-F 0 "JP10" V 3754 3718 50  0000 L CNN
+F 0 "JP4" V 3754 3718 50  0000 L CNN
 F 1 "SolderJumper_2_Open" V 3845 3718 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 3650 50  0001 C CNN
 F 3 "~" H 3800 3650 50  0001 C CNN
 	1    3800 3650
 	0    1    1    0   
 $EndComp
+Wire Bus Line
+	5200 2150 5200 2550
 $EndSCHEMATC

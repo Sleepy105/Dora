@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 17
+Sheet 1 8
 Title "Overview"
 Date "2019-10-11"
 Rev "1.0"
@@ -73,14 +73,12 @@ S 9200 1600 1100 1100
 U 5D1373A3
 F0 "Sensors" 50
 F1 "sensors.sch" 50
-F2 "IR_SEL" I L 9200 1700 50 
-F3 "IR_OUT" I L 9200 1800 50 
-F4 "LEFT_ENC1" I L 9200 2050 50 
-F5 "LEFT_ENC2" I L 9200 2150 50 
-F6 "RIGHT_ENC1" I L 9200 2250 50 
-F7 "RIGHT_ENC2" I L 9200 2350 50 
-F8 "Ultra_EN" I R 10300 1700 50 
-F9 "Ultra" O R 10300 1800 50 
+F2 "LEFT_ENC1" I L 9200 2050 50 
+F3 "LEFT_ENC2" I L 9200 2150 50 
+F4 "RIGHT_ENC1" I L 9200 2250 50 
+F5 "RIGHT_ENC2" I L 9200 2350 50 
+F6 "Ultra_EN" I R 10300 1700 50 
+F7 "Ultra" O R 10300 1800 50 
 $EndSheet
 $Sheet
 S 1550 1450 1500 1350
@@ -116,14 +114,8 @@ F27 "D2_DigiPot_SHDN" I R 3050 2700 50
 $EndSheet
 Text Label 6750 1400 0    50   ~ 0
 IR_SEL
-Text Label 9200 1700 2    50   ~ 0
-IR_SEL
-Text Label 9200 1800 2    50   ~ 0
-IR_OUT
 Text Label 6750 1500 0    50   ~ 0
 IR_OUT
-Text Label 2700 5950 0    50   ~ 0
-IR_EN
 Text Label 6750 1600 0    50   ~ 0
 IR_EN
 $Sheet
@@ -225,19 +217,6 @@ D2_IMODE
 Text Label 5450 2550 2    50   ~ 0
 D2_PMODE
 $Sheet
-S 1450 5200 1250 1350
-U 5D48851F
-F0 "Power" 50
-F1 "power.sch" 50
-F2 "Battery_CellVoltage" O R 2700 5400 50 
-F3 "SDA" I R 2700 5800 50 
-F4 "SCL" I R 2700 5700 50 
-F5 "Battery_OvercurrentAlert" O R 2700 5300 50 
-F6 "Battery_PackCurrent" O R 2700 5500 50 
-F7 "RPi_ON" I R 2700 5600 50 
-F8 "IR_ON" I R 2700 5950 50 
-$EndSheet
-$Sheet
 S 5250 6100 900  800 
 U 5D86834E
 F0 "Communications" 50
@@ -295,10 +274,6 @@ Text Label 7850 2950 0    50   ~ 0
 BMS_SCL
 Text Label 7850 3050 0    50   ~ 0
 BMS_SDA
-Text Label 2700 5700 0    50   ~ 0
-BMS_SCL
-Text Label 2700 5800 0    50   ~ 0
-BMS_SDA
 Wire Wire Line
 	7700 2950 7700 2700
 Connection ~ 7700 2700
@@ -315,20 +290,12 @@ Text Label 6750 3050 0    50   ~ 0
 IMU_SDA
 Text Label 5450 4300 2    50   ~ 0
 Battery_Current
-Text Label 2700 5500 0    50   ~ 0
-Battery_Current
 Text Label 5450 4200 2    50   ~ 0
 Battery_Temperature
 Text Label 5450 4400 2    50   ~ 0
 Battery_Cell_Voltage
-Text Label 2700 5400 0    50   ~ 0
-Battery_Cell_Voltage
 Text Label 5450 3100 2    50   ~ 0
 RPi_EN
-Text Label 2700 5600 0    50   ~ 0
-RPi_EN
-Text Label 2700 5300 0    50   ~ 0
-Battery_Overcurrent
 Text Label 5450 4500 2    50   ~ 0
 Battery_Overcurrent
 Text Label 6750 3700 0    50   ~ 0
